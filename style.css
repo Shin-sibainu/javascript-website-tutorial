@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(128, 74, 199), rgb(80, 146, 177));
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    z-index: 1;
+    margin: 20px auto;
+    position: sticky;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1; /* 空いてるスペースの余白を強制的に入れてる。flex-growと同じ。 */
+    text-align: right; /* インライン要素だから右寄せできる。a */
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav-links ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.infomation {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+.circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: #ccc;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
