@@ -53,16 +53,89 @@ nav {
     height: 1000px;
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: 0%;
     transform: translateY(-50%);
 }
 
-.circle {
+#circle {
     width: 1000px;
     height: 1000px;
     position: absolute;
-    background: #ccc;
+    /* background: #ccc; */
     border-radius: 50%;
     top: 0;
     left: 0;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+
+.feature div {
+    margin-left: 20px;
+}
+
+.feature div a {
+    margin-top: 8px;
+}
+
+.one {
+    top: 450px;
+    right: 50px;
+}
+
+.two {
+    top: 150px;
+    left: 350px;
+}
+
+.three {
+    bottom: 450px;
+    left: 50px;
+}
+
+.four {
+    bottom: 150px;
+    right: 350px;
+}
+
+.mobile {
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35%;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.control img {
+    width: 15px;
+}
+
+.control h3 {
+    margin: 20px 0;
+    color: #fff;
+}
+
+#upBtn {
+    cursor: pointer;
+}
+
+#downBtn {
+    cursor: pointer;
+    transform: rotate(-180deg);
 }
