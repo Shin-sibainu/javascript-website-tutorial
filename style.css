@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .main {
+    font-size: 1.2rem;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, rgb(128, 74, 199), rgb(80, 146, 177));
+    background: linear-gradient(to right, rgb(106, 63, 126), rgb(185, 69, 69));
     overflow: hidden;
     position: relative;
 }
@@ -19,15 +20,22 @@ nav {
     margin: 20px auto;
     position: sticky;
     align-items: center;
+    font-weight: 550;
+}
+
+.logo-area {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    flex-basis: 20%;
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
 }
 
-.logo img {
-    width: 150px;
-}
+
 
 .nav-links {
     flex: 1; /* 空いてるスペースの余白を強制的に入れてる。flex-growと同じ。 */
@@ -44,8 +52,14 @@ nav {
 }
 
 .nav-links ul a {
+    font-weight: 600;
     color: #fff;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links ul a:hover{
+    color: rgb(236, 183, 183);
 }
 
 .infomation {
@@ -89,12 +103,12 @@ nav {
 
 .one {
     top: 450px;
-    right: 50px;
+    right: 70px;
 }
 
 .two {
-    top: 150px;
-    left: 350px;
+    top: 100px;
+    left: 340px;
     transform: rotate(-90deg);
 }
 
@@ -107,18 +121,18 @@ nav {
 
 .four {
     bottom: 150px;
-    right: 350px;
+    right: 370px;
     transform: rotate(-270deg);
 
 }
 
 .mobile {
-    width: 200px;
+    width: 400px;
     position: absolute;
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
-    left: 35%;
+    left: 27%;
 }
 
 .control {
